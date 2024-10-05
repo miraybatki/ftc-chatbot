@@ -66,23 +66,7 @@ export function PromptForm({
         setMessages(currentMessages => [...currentMessages, responseMessage])
       }}
     >
-      <div className="relative flex max-h-60 w-full grow flex-col overflow-hidden bg-background px-8 sm:rounded-md sm:border sm:px-12">
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-0 top-[14px] size-8 rounded-full bg-background p-0 sm:left-4"
-              onClick={() => {
-                router.push('/new')
-              }}
-            >
-              <IconPlus />
-              <span className="sr-only">New Chat</span>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>New Chat</TooltipContent>
-        </Tooltip>
+      <div className="relative flex max-h-60 w-full grow flex-col overflow-hidden bg-background sm:rounded-md sm:border">
         <Textarea
           ref={inputRef}
           tabIndex={0}

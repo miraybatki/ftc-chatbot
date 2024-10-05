@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'How do you use',
+      subheading: 'Vuforia for image recognition?',
+      message: 'How do you use Vuforia for image recognition in FTC?'
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'What are some common',
+      subheading: 'issues teams face during competitions?',
+      message: 'What are the common issues teams face during competitions, and how do you fix them?'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'How do we improve',
+      subheading: 'our scoring in autonomous?',
+      message: 'How do we improve our scoring in autonomous?'
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'What are the key',
+      subheading: 'awards in FTC competitions?',
+      message: 'What are the key awards in FTC competitions?'
     }
   ]
 
