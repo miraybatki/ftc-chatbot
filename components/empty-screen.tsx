@@ -1,5 +1,3 @@
-import { UseChatHelpers } from 'ai/react'
-
 import { ExternalLink } from '@/components/external-link'
 
 export function EmptyScreen() {

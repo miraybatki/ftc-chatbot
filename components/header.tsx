@@ -1,13 +1,9 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-import { cn } from '@/lib/utils'
 import { auth } from '@/auth'
-import { Button, buttonVariants } from '@/components/ui/button'
-import {
-  IconNextChat,
-  IconSeparator
-} from '@/components/ui/icons'
+import { Button } from '@/components/ui/button'
+
 import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
