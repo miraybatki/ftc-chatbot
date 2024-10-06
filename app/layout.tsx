@@ -16,7 +16,7 @@ export const metadata = {
     default: 'FTC Chatbot',
     template: `%s - FTC Chatbot`
   },
-  description: 'An AI-powered chatbot template built with Next.js and Vercel.',
+  description: 'FTC Chatbot developed by FRC Team 9483',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
