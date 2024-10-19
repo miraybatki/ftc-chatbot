@@ -44,16 +44,6 @@ export function ChatPanel({
       heading: 'What are some common',
       subheading: 'issues teams face during competitions?',
       message: 'What are the common issues teams face during competitions, and how do you fix them?'
-    },
-    {
-      heading: 'How do we improve',
-      subheading: 'our scoring in autonomous?',
-      message: 'How do we improve our scoring in autonomous?'
-    },
-    {
-      heading: 'What are the key',
-      subheading: 'awards in FTC competitions?',
-      message: 'What are the key awards in FTC competitions?'
     }
   ]
 
