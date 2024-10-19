@@ -6,7 +6,7 @@ import { Session } from '@/lib/types'
 import { getMissingKeys } from '@/app/actions'
 
 export const metadata = {
-  title: 'New Chat'
+  title: 'Chat'
 }
 
 export default async function IndexPage() {

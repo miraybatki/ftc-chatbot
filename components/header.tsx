@@ -3,7 +3,8 @@ import Link from 'next/link'
 
 import { auth } from '@/auth'
 import { Button } from '@/components/ui/button'
-
+import { IconSeparator } from '@/components/ui/icons'
+import Image from 'next/image'
 import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
@@ -23,14 +24,29 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
+          <Image
+            src="/icon-black.png"
+            alt="Logo"
+            width={24}
+            height={24}
+            className="w-6 h-6 mr-2 dark:hidden"
+          />
+          <Image
+            src="/icon-white.png"
+            alt="Logo"
+            width={24}
+            height={24}
+            className="hidden w-6 h-6 mr-2 dark:block"
+          />
         </Link>
       )}
       <div className="flex items-center">
+        <IconSeparator className="size-6 text-muted-foreground/50" />
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
           <Button variant="link" asChild className="-ml-2">
-            <Link href="/login">Log In / Sign Up</Link>
+            <Link href="/login">Login</Link>
           </Button>
         )}
       </div>
