@@ -25,14 +25,14 @@ async function UserOrLogin() {
       ) : (
         <Link href="/new" rel="nofollow">
           <Image
-            src="/icon-black.png"
+            src="/icon-black.svg"
             alt="Logo"
             width={24}
             height={24}
             className="w-6 h-6 mr-2 dark:hidden"
           />
           <Image
-            src="/icon-white.png"
+            src="/icon-white.svg"
             alt="Logo"
             width={24}
             height={24}

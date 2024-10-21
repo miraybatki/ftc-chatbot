@@ -6,7 +6,7 @@ export function EmptyScreen() {
       <div className="flex flex-col items-center space-y-2">
         <div className="flex justify-center mb-4">
           <img
-            src="/revolutionary-dozer.png"
+            src="/revolutionary-dozer.svg"
             alt="Revu Dozer"
             className="w-auto h-24"
           />
