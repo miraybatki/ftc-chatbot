@@ -1,5 +1,3 @@
-import { ExternalLink } from '@/components/external-link'
-
 export function EmptyScreen() {
   return (
     <div className="mx-auto max-w-2xl px-4">
@@ -16,12 +14,9 @@ export function EmptyScreen() {
           Welcome to FTC Chatbot!
         </h1>
         <p className="leading-tight text-muted-foreground text-center">
-          This chatbot has been developed by {' '}
-          <ExternalLink href="https://frc9483.com">
-            FRC Team 9483
-          </ExternalLink>{' '} with the aim of assisting
-          FTC teams. It is designed to provide guidance and support to help teams
-          succeed in their competitions and projects.
+          This chatbot has been developed by FRC Team 9483 with the aim of 
+          assisting FTC teams. It is designed to provide guidance and support 
+          to help teams succeed in their competitions and projects.
         </p>
       </div>
     </div>
