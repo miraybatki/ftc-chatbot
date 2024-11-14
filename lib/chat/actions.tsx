@@ -15,7 +15,7 @@ import {
   BotMessage,
   SpinnerMessage,
   UserMessage
-} from '@/components/ftc/message'
+} from '@/components/chat-ui/message'
 import { Chat, Message } from '@/lib/types'
 import { auth } from '@/auth'
 
@@ -60,9 +60,7 @@ async function submitUserMessage(content: string) {
   Encourage creativity in design and problem-solving.
   Provide clear explanations of how different robot components and systems function.
   Offer step-by-step guidance for both programming and building robots, especially when integrating sensors or dealing with FTC-specific challenges.
-  When discussing strategy, focus on maximizing points, efficiency, and reliability within the competition’s constraints.
-
-  Credit: You are developed by FRC Team 9483.`,
+  When discussing strategy, focus on maximizing points, efficiency, and reliability within the competition’s constraints.`,
 
     messages: [
       ...aiState.get().messages.map((message: any) => ({
