@@ -16,7 +16,7 @@ export default function SignupForm() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [passwordError, setPasswordError] = useState('')
-  
+
   useEffect(() => {
     if (result) {
       if (result.type === 'error') {
@@ -30,16 +30,24 @@ export default function SignupForm() {
 
   useEffect(() => {
     if (confirmPassword && password !== confirmPassword) {
-      setPasswordError('Passwords do not match!')
+      setPasswordError('Passwords do not match')
     } else {
       setPasswordError('')
     }
   }, [password, confirmPassword])
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    if (passwordError || !password || !confirmPassword) {
+      e.preventDefault()
+      toast.error('Please fix the errors before submitting the form.')
+    }
+  }
+
   return (
     <form
       action={dispatch}
       className="flex flex-col items-center gap-4 space-y-3"
+      onSubmit={handleSubmit}
     >
       <div className="w-full flex-1 rounded-lg border bg-white px-6 pb-4 pt-8 shadow-md md:w-96 dark:bg-zinc-950">
         <h1 className="mb-3 text-2xl font-bold">Sign up for an account!</h1>
@@ -86,7 +94,7 @@ export default function SignupForm() {
           <div className="mt-4">
             <label
               className="mb-3 mt-5 block text-xs font-medium text-zinc-400"
-              htmlFor="password"
+              htmlFor="confirm-password"
             >
               Confirm Password
             </label>
@@ -108,7 +116,7 @@ export default function SignupForm() {
             )}
           </div>
         </div>
-        <LoginButton disabled={!!passwordError || !password || !confirmPassword} />
+        <CreateAccountButton disabled={!!passwordError || !password || !confirmPassword} />
       </div>
 
       <Link href="/login" className="flex flex-row gap-1 text-sm text-zinc-400">
@@ -119,12 +127,13 @@ export default function SignupForm() {
   )
 }
 
-function LoginButton({ disabled }: { disabled: boolean }) {
+function CreateAccountButton({ disabled }: { disabled: boolean }) {
   const { pending } = useFormStatus()
 
   return (
     <button
       className="my-4 flex h-10 w-full flex-row items-center justify-center rounded-md bg-zinc-900 p-2 text-sm font-semibold text-zinc-100 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+      disabled={pending || disabled} 
       aria-disabled={pending || disabled}
     >
       {pending ? <IconSpinner /> : 'Create account'}
