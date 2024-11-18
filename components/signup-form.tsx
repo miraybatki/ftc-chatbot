@@ -5,9 +5,9 @@ import { signup } from '@/app/signup/actions'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { toast } from 'sonner'
-import { IconSpinner } from './ui/icons'
 import { getMessageFromCode } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
+import CreateAccountButton from './create-account-button'
 
 export default function SignupForm() {
   const router = useRouter()
@@ -124,19 +124,5 @@ export default function SignupForm() {
         <div className="font-semibold underline">Log in</div>
       </Link>
     </form>
-  )
-}
-
-function CreateAccountButton({ disabled }: { disabled: boolean }) {
-  const { pending } = useFormStatus()
-
-  return (
-    <button
-      className="my-4 flex h-10 w-full flex-row items-center justify-center rounded-md bg-zinc-900 p-2 text-sm font-semibold text-zinc-100 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
-      disabled={pending || disabled} 
-      aria-disabled={pending || disabled}
-    >
-      {pending ? <IconSpinner /> : 'Create account'}
-    </button>
   )
 }
