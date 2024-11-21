@@ -11,8 +11,6 @@ import remarkMath from 'remark-math'
 import { StreamableValue } from 'ai/rsc'
 import { useStreamableText } from '@/lib/hooks/use-streamable-text'
 
-// Different types of message bubbles.
-
 export function UserMessage({ children }: { children: React.ReactNode }) {
   return (
     <div className="group relative flex items-start md:-ml-12">
