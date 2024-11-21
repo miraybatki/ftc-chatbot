@@ -43,7 +43,6 @@ export function PromptForm({
       onSubmit={async (e: any) => {
         e.preventDefault()
 
-        // Blur focus on mobile
         if (window.innerWidth < 600) {
           e.target['message']?.blur()
         }
@@ -52,7 +51,6 @@ export function PromptForm({
         setInput('')
         if (!value) return
 
-        // Optimistically add user message UI
         setMessages(currentMessages => [
           ...currentMessages,
           {
@@ -61,7 +59,6 @@ export function PromptForm({
           }
         ])
 
-        // Submit and get response message
         const responseMessage = await submitUserMessage(value)
         setMessages(currentMessages => [...currentMessages, responseMessage])
       }}

@@ -137,42 +137,42 @@ async function submitUserMessage(content: string) {
   In Landing Zone 2: 20 points
   In Landing Zone 3: 10 points
   
-  Give short and concise answers about the 2024-2025 game so 2025 season. Official statement of the 2024-2025 game: INTO THE DEEP is played on a 12 ft. x 12 ft. (3.7m x 3.7m) square field with approximately 1 ft. (0.3 m) high walls and a soft foam mat floor. The game involves two Alliances - "red" and "blue", with each Alliance made up of two Robots. This season’s scoring elements include Treasure and Artifacts that are neutral elements.
-
-  Game Field Elements:
-  Treasure: These are the primary scoring elements and come in different forms, such as Gems and Coins, distributed across the field.
-  Artifacts: Bonus scoring elements located in designated field areas.
-  Depth Zones: Three distinct regions—Shallow, Mid, and Deep—each offering varying scoring opportunities.
-  Buoy Stations: Positioned for Robot interaction to retrieve and deposit Treasures.
-  Alliance-Specific Docks: Areas where Robots must park during the End Game for points.
-  Match Structure:
-  Matches consist of two periods:
-
-  Autonomous Period: A 30-second phase where Robots operate independently.
-  Driver-Controlled Period: A two-minute phase where Robots are operated by team members. The final 30 seconds of this phase is called the End Game, introducing additional scoring opportunities.
-  Scoring Breakdown:
-  Autonomous Period:
-  Navigation Tasks:
-  Parked in Shallow Zone: 5 points
-  Parked in Mid Zone: 10 points
-  arked in Deep Zone: 20 points
-  Treasure Placement:
-  Correct Zone for Gems: 15 points
-  Correct Zone for Coins: 10 points
-  Artifact Bonus:
-  Correctly placed Artifact: 25 points
-  Driver-Controlled Period:
-  Treasure Placement:
-  Shallow Zone: 1 point per element
-  Mid Zone: 3 points per element
-  Deep Zone: 5 points per element
-  Artifact Completion: Additional 15 points for completing Artifact placement.
-  End Game:
-  Docking:
-  Parked on Alliance Dock: 10 points
-  Parked on Neutral Dock: 15 points
-  Treasure Bonus: 10 points for every Treasure placed during the End Game.
-  Alliance Signal Achievement: 20 points for successfully aligning Treasures with a pre-defined Alliance Signal.`,
+  Give short and concise answers about the 2024-2025 game so 2025 season. Official statement of the 2024-2025 game: INTO THE DEEP, two competing ALLIANCES collect deep sea SAMPLES to score in their
+  NET ZONE or BASKETS, work with HUMAN PLAYERS to create SPECIMENS to score on the CHAMBERS of the
+  SUBMERSIBLE and ASCEND from the depths before time runs out.
+  During the first 30 seconds of the MATCH the ROBOTS operate autonomously. Without guidance from their
+  drivers, the ROBOTS score SAMPLES in their BASKETS or NETS, or SPECIMENS on the CHAMBERS. They can
+  collect additional SAMPLES to score in BASKETS or make into SPECIMENS and PARK before the end of the
+  period.
+  During the remaining 2 minutes of the MATCH, human drivers take control of their ROBOT. ROBOTS collect and
+  sort SAMPLES from under the SUBMERSIBLE in the center of the FIELD. The yellow SAMPLES are scored in the
+  BASKETS and the ALLIANCE SPECIFIC red and blue SAMPLES are returned to the OBSERVATION ZONE for the
+  HUMAN PLAYERS to collect.
+  HUMAN PLAYERS can pick up SAMPLES delivered to the OBSERVATION ZONE and add a hanging CLIP to
+  create a SPECIMEN. SPECIMENS can then be returned to the OBSERVATION ZONE on the FIELD where
+  ROBOTS can pick them back up and score them on the CHAMBERS located on the SUBMERSIBLE.
+  As time runs out, ROBOTS can either PARK in the OBSERVATION ZONE or race back to climb the RUNGS on the
+  SUBMERSIBLE so they can ASCEND out of the deep.
+  The ALLIANCE that earns the most points wins the MATCH!
+  Auto Scoring:
+  PARKED in OBSERVATION ZONE: 3 points
+  LEVEL 1 ASCENT: 3 points
+  SAMPLE in NET ZONE: 2 points
+  SAMPLE in LOW BASKET: 4 points
+  SAMPLE in HIGH BASKET: 8 points
+  SPECIMEN on LOW CHAMBER: 6 points
+  SPECIMEN on HIGH CHAMBER: 10 points
+  Teleop Period Scoring:
+  SAMPLE in NET ZONE: 2 points
+  SAMPLE in LOW BASKET: 4 points
+  SAMPLE in HIGH BASKET: 8 points
+  SPECIMEN on LOW CHAMBER: 6 points
+  SPECIMEN on HIGH CHAMBER: points
+  End Game Scoring:
+  PARKED in OBSERVATION ZONE: 3 points
+  LEVEL 1 ASCENT: 3 points
+  LEVEL 2 ASCENT: 15 points
+  LEVEL 3 ASCENT: 30 points`,
 
     messages: [
       ...aiState.get().messages.map((message: any) => ({
